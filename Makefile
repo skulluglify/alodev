@@ -1,4 +1,4 @@
-GITHUB_URL := git@github.com:skulluglify/alodev.git
+GITHUB_URL := git@github.com:skulluglify/alodev-backend.git
 
 git-init:
 	git init .
@@ -22,3 +22,13 @@ git-commit:
 
 git-push:
 	git push -u origin main
+
+run: build
+	build/app.exe
+
+build: clean
+	mkdir build
+	go build -o build/app.exe .
+
+clean:
+	pwsh Scripts/Removal.ps1
