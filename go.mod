@@ -2,7 +2,9 @@ module alodev
 
 go 1.22
 
-require dvwk v1.0.0
+require (
+	dvwk v1.0.0 // indirect
+)
 
 require (
 	github.com/labstack/echo/v4 v4.12.0 // indirect

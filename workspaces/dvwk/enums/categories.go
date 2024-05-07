@@ -52,7 +52,11 @@ func (categoryKind CategoryKind) ToString() string {
 }
 
 func CategoryKindFromString(categoryKind string) CategoryKind {
-	switch categoryKind {
+	/*
+	 * title := cases.Title(language.Und)
+	 * switch title.String(categoryKind) {
+	 */
+	switch CapitalizeWord(categoryKind) {
 	case "Applications":
 		return Applications
 	case "Articles":
