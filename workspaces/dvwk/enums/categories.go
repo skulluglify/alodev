@@ -1,5 +1,7 @@
 package models
 
+import "dvwk/utils"
+
 type CategoryKind int
 
 const (
@@ -56,7 +58,7 @@ func CategoryKindFromString(categoryKind string) CategoryKind {
 	 * title := cases.Title(language.Und)
 	 * switch title.String(categoryKind) {
 	 */
-	switch CapitalizeWord(categoryKind) {
+	switch utils.CapitalizeWord(categoryKind) {
 	case "Applications":
 		return Applications
 	case "Articles":

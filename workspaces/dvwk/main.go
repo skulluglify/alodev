@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Print(utils.CapitalizeEachWord("hello, world!"))
+	fmt.Println(utils.CapitalizeEachWord("hello, world!"))
 }
